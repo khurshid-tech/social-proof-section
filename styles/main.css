@@ -179,13 +179,12 @@ img {
     .social-section .testimonials {
         flex-direction: row;
         justify-content: space-between;
-        height: 180px;
         margin-top: 2rem;
         gap: 1.8rem;
     }
 
     .social-section .testimonials .testimonil-info {
-        height: 100%;
+        height: fit-content;
     }
 
     .social-section .testimonials .testimonil-info .text {
