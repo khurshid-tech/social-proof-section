@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    background: white;
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: left 0 top 0, right 0 bottom 0;
+    background-size: contain;
+}
+
+.social-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 4rem 1.2rem;
+}
+
+.social-section .social-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.social-section .social-info .social-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-section h1 {
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+    font-size: 2.3rem;
+    letter-spacing: -1px;
+    padding: 0 2rem;
+    line-height: 0.8;
+}
+
+.social-section p {
+    line-height: 1.3;
+    font-size: 1.1rem;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    text-align: center;
+}
+
+.social-section .rating-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.social-section .rating-section .rating-info {
+    background-color: hsl(300, 24%, 96%);
+    padding: 0.9rem;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-section .rating-section .rating-info span {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);;
+
+}
+
+.social-section .testimonials {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 0.8rem;
+}
+
+.social-section .testimonials .testimonil-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.5rem;
+    color: white;
+    background: hsl(300, 43%, 22%);
+    border-radius: 0.5rem;
+}
+
+.social-section .testimonials .testimonil-info .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-section .testimonials .testimonil-info .profile img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.social-section .testimonials .testimonil-info .profile .profile-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.social-section .testimonials .testimonil-info .profile .profile-name span:last-child {
+    color: hsl(333, 80%, 67%);
+}
+
+.social-section .testimonials .testimonil-info .text {
+    line-height: 1.3;
+}
+
+
+@media (min-width: 992px) {
+
+    .wrapper {
+        height: auto;
+    }
+    .social-section {
+        padding: 4rem 7rem;
+    }
+
+    .social-section .social-info {
+        flex-direction: row;
+    }
+
+    .social-section .social-info .social-text {
+        flex: 1;
+    }
+
+    .social-section .rating-section {
+        flex: 1;
+    }
+
+    .social-section h1 {
+        text-align: left;
+        padding: 0;
+        font-size: 3.2rem;
+        width: 65%;
+    }
+
+    .social-section p {
+        font-size: 1rem;
+        text-align: left;
+        width: 65%;
+    }
+
+    .social-section .rating-section .rating-info {
+        flex-direction: row;
+        gap: 1.2rem;
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .social-section .rating-section .rating-info:nth-of-type(2) {
+        margin-left: 6.5rem;
+    }
+
+    .social-section .rating-section .rating-info:nth-of-type(3) {
+        margin-left: 11rem;
+    }
+
+    .social-section .testimonials {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 180px;
+        margin-top: 2rem;
+        gap: 1.8rem;
+    }
+
+    .social-section .testimonials .testimonil-info {
+        height: 100%;
+    }
+
+    .social-section .testimonials .testimonil-info .text {
+        font-size: 0.9rem;
+    }
+
+    .social-section .testimonials .testimonil-info:nth-of-type(2) {
+        margin-top: 1.5rem;
+    }
+
+    .social-section .testimonials .testimonil-info:nth-of-type(3) {
+        margin-top: 3rem;
+    }
+}
