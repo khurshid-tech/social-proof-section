@@ -128,9 +128,10 @@ img {
 
 
 @media (min-width: 992px) {
-
     .wrapper {
-        height: auto;
+        height: 100vh;
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-size: 500px;
     }
     .social-section {
         padding: 4rem 7rem;
